@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Always run. QA installs Chrome before Node, and that order is what stalls
+# the Node.js buildpack's 120-second download from nodejs.org.
+echo "Node binary"
+exit 0
